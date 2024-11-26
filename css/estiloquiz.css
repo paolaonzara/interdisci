@@ -73,12 +73,11 @@ h1 {
 .info_box,
 .quiz_box,
 .result_box{
-  position:relative;
-  top: 60%;
+  position: absolute;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: all 0.3 ease;
-;
 }
 
 .info_box.activeInfo,
@@ -91,6 +90,7 @@ h1 {
   background-color: #080312;
   color: white;
 }
+
 
 
 
@@ -606,10 +606,6 @@ footer .next_btn:hover{
 
 }
 
-.start_btn{
-  text-align: center;
-}
-
 .text{
   color: black;
 }
@@ -618,13 +614,7 @@ footer .next_btn:hover{
   padding: 3%;
 }
 
-.divquiz{
-  position: absolute;
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
 
-}
 
 @media (max-width: 720px){
   .quiz_box header .title{
@@ -671,10 +661,7 @@ footer .next_btn:hover{
 
   .divquiz{
     padding: auto;
-    position: absolute;
-    
   }
-
 }
 
 @media(max-width: 465px){
@@ -703,20 +690,39 @@ footer .next_btn:hover{
 }
   footer .next_btn {
     font-size: 0.8rem;
-
-
-}
-
-
-.result_box.activeResult{
-  margin-top: -160%;
 }
 }
 
-.result_box.activeResult{
-  margin-top: -50%;
+/* Transição para todas as telas */
+.info_box, .quiz_box, .result_box {
+  transition: opacity 0.5s ease;
+  opacity: 0;
 }
 
-a{
-  text-decoration: none;
+/* Ativar quando a página estiver visível */
+.activeInfo {
+  opacity: 1;
+}
+
+.activeQuiz {
+  opacity: 1;
+}
+
+.activeResult {
+  opacity: 1;
+}
+
+/* Para a tela de resultado começar invisível */
+.result_box {
+  opacity: 0;
+}
+
+/* Transição suave para as questões */
+.que_text, .option_list {
+  transition: opacity 0.5s ease;
+  opacity: 0;
+}
+
+.showQuestion {
+  opacity: 1;
 }

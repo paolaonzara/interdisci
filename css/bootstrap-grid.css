@@ -61,16 +61,53 @@
   margin-top: calc(-1 * var(--bs-gutter-y));
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
+  justify-content: space-between; /* Distribui os itens de forma mais equilibrada */
 }
+
 .row > * {
   box-sizing: border-box;
   flex-shrink: 0;
-  
-  max-width: fit-content;
+  flex-grow: 1;
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-top: var(--bs-gutter-y);
+  
+  /* Garantir que cada item tenha a proporção desejada */
+  width: 100%;  /* Cada item ocupa 100% da largura do container */
+  position: relative;
 }
+
+/* Para garantir que os itens não sejam deformados, vamos definir um aspecto fixo usando padding */
+.row > *::before {
+  content: '';
+  display: block;
+  padding-top: 100%; /* Isso cria a forma quadrada (1:1) */
+}
+
+/* Ajustes para celulares */
+@media (max-width: 767px) {
+  .row > * {
+    flex-basis: 100%;  /* Cada item ocupa toda a linha */
+    padding-top: 100%;  /* Garante o formato quadrado */
+  }
+}
+
+/* Ajustes para tablets (largura de 768px a 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .row > * {
+    flex-basis: 48%;  /* Cada item ocupa 48% da largura da linha */
+    padding-top: 48%;  /* Ajusta o padding para manter a proporção */
+  }
+}
+
+/* Ajustes para telas grandes (desktops) */
+@media (min-width: 1025px) {
+  .row > * {
+    flex-basis: 30%;  /* Cada item ocupa 30% da largura da linha */
+    padding-top: 30%;  /* Ajusta o padding para manter a proporção */
+  }
+}
+
 
 .col {
   flex: 1 0 0%;
