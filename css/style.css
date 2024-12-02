@@ -27,6 +27,106 @@
 /*----------------------------------------*/
 /* Template default CSS
 /*----------------------------------------*/
+
+/* Estilos gerais do container e do título */
+.team {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.team__title span {
+    font-size: 18px;
+    color: #888;
+}
+.team__title h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #222;
+}
+
+/* Estilo do item da equipe */
+.team__item {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.team__item__text {
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 15px;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .team__item__text h4 {
+        font-size: 18px;
+    }
+    .team__item__text p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .team__item {
+        margin-bottom: 30px;
+    }
+    .team__title h2 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 576px) {
+    .team__title h2 {
+        font-size: 22px;
+    }
+    .team__item__text h4 {
+        font-size: 16px;
+    }
+    .team__item__text p {
+        font-size: 12px;
+    }
+}
+
+/* Botão Finalizar */
+.team__btn {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.primary-btn {
+    background-color: #4f278f;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.primary-btn:hover {
+    background-color: #003366;
+    transition: background-color 0.3s ease;
+}
+
+/* Ajuste para o fundo do botão */
+.team__item.set-bg {
+    background-size: cover;
+    background-position: center;
+}
+
+/* Remove padding extra nas colunas */
+.p-0 {
+    padding: 0 !important;
+}
+
+
 .header {
   position: relative;
   z-index: 10; /* Garante que o menu esteja acima de outros elementos */
