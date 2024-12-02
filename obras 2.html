@@ -40,22 +40,21 @@
                     </div>
                 </div>
                 <div class="col-lg-10">
-                  <div class="col-lg-10">
-                    <div class="header__nav__option">
-                        <nav class="header__nav__menu mobile-menu">
-                            <ul>
-                                <li class="active"><a href="./index.html">Início</a></li>
-                                <li><a href="./ans.html">Sobre</a></li>
-                                <li><a href="./Vídeos Informátivos.html">Vídeos Informátivos</a></li>
-                                <li><a href="#">Obras</a>
-                                    <ul class="dropdown">
-                                        <li><a href="./obras.html">Livros</a></li>
-                                        <li><a href="./obras 2.html">Jogos</a></li>
-                                        <li><a href="./obras 3.html">Séries</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="./Qüiz.html">Quiz</a></li>
-                            </ul>
+                  <div class="header__nav__option">
+                      <nav class="header__nav__menu mobile-menu">
+                          <ul >
+                              <li ><a href="./index.html">Início</a></li>
+                              <li><a href="./ans.html">Sobre</a></li>
+                              <li><a href="./Vídeos Informátivos.html">Vídeos Informátivos</a></li>
+                              <li class="active"><a href="#">Obras</a>
+                                  <ul class="dropdown">
+                                      <li><a href="./obras.html">Livros</a></li>
+                                      <li><a href="./obras 2.html">Jogos</a></li>
+                                      <li><a href="./obras 3.html">Séries</a></li>
+                                  </ul>
+                              </li>
+                              <li><a href="./Qüiz.html">Quiz</a>
+                          </ul>
                         </nav>
                     </div>
                 </div>
@@ -66,506 +65,204 @@
     </header>
     <!-- Header End -->
 
+    <!-- Botão Voltar ao Topo -->
+
+
+<a href="#" class="back-to-top" id="backToTopBtn">
+  <span class="arrow">&#8679;</span> <!-- A seta que vai fazer a animação -->
+</a>
+
+<!-- Scripts JS -->
+<script>
+  // Obtém o botão
+  let backToTopBtn = document.getElementById("backToTopBtn");
+
+  // Quando o usuário rolar para baixo 100px da parte superior da página, mostre o botão
+  window.onscroll = function() {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+          backToTopBtn.style.display = "block";
+      } else {
+          backToTopBtn.style.display = "none";
+      }
+  };
+
+  // Quando o botão for clicado, rola até o topo da página
+  backToTopBtn.addEventListener("click", function(event) {
+      event.preventDefault();
+      window.scrollTo({
+          top: 0,
+          behavior: "smooth"  // Faz o scroll suave
+      });
+  });
+</script>
+
+
     <!-- Hero Section Begin -->
     <section class="hero1">
-        <div class="hero__slider owl-carousel">
-            <div class="hero__item set-bg" data-setbg="img/Obras/capa12.png">
-                <div class="container">
-                    <div class="row1">
-                        <div class="col-lg-6">
-                            <div class="hero__text">
-                                
-                                <h2>OMORI </h2>
-                                
-                                <a href="#omo" class="primary-btn">Veja sobre</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="hero__item set-bg" data-setbg="img/Obras/capa13.png">
-                <div class="container">
-                    <div class="row1">
-                        <div class="col-lg-6">
-                            <div class="hero__text">
-                                
-                                <h2>Celeste</h2>
-                                <a href="#cel" class="primary-btn">Veja sobre</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="hero__item set-bg" data-setbg="img/Obras/capa14.png">
-                <div class="container">
-                    <div class="row1">
-                        <div class="col-lg-6">
-                            <div class="hero__text">
-                                
-                                <h2>Life is Strange </h2>
-                                
-                                <a href="#lis" class="primary-btn">Veja sobre</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-             </div>
-        
-             <div class="hero__item set-bg" data-setbg="img/Obras/capa15.png">
-                    <div class="container">
-                        <div class="row1">
-                            <div class="col-lg-6">
-                                <div class="hero__text">
-                                    
-                                    <h2> To the Moon</h2>
-                                    <a href="#moon" class="primary-btn">Veja sobre</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+      <div class="hero__slider owl-carousel">
+          <div class="hero__item set-bg" data-setbg="img/Obras/capa12.png" data-mobilebg="img/fundo.gif">
+              <div class="container">
+                  <div class="row1">
+                      <div class="col-lg-6">
+                          <div class="hero__text">
+
+                              <h2>OMORI </h2>
+
+                              <a href="#omo" class="primary-btn">Veja sobre</a>
+                          </div>
+                      </div>
+                  </div>
               </div>
-              <div class="hero__item set-bg" data-setbg="img/Obras/capa16.png">
+          </div>
+          <div class="hero__item set-bg" data-setbg="img/Obras/capa13.png" data-mobilebg="img/fundo.gif">
+              <div class="container">
+                  <div class="row1">
+                      <div class="col-lg-6">
+                          <div class="hero__text">
+
+                              <h2>Celeste</h2>
+                              <a href="#cel" class="primary-btn">Veja sobre</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="hero__item set-bg" data-setbg="img/Obras/capa14.png" data-mobilebg="img/fundo.gif">
+              <div class="container">
+                  <div class="row1">
+                      <div class="col-lg-6">
+                          <div class="hero__text">
+
+                              <h2>Life is Strange </h2>
+
+                              <a href="#lis" class="primary-btn">Veja sobre</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+           </div>
+
+           <div class="hero__item set-bg" data-setbg="img/Obras/capa15.png" data-mobilebg="img/fundo.gif">
                   <div class="container">
-                     <div class="row1">
+                      <div class="row1">
                           <div class="col-lg-6">
                               <div class="hero__text">
-                                
-                                  <h2>Midnight Scenes</h2>
-                                 <a href="#mid" class="primary-btn">Veja sobre</a>
+
+                                  <h2> To the Moon</h2>
+                                  <a href="#moon" class="primary-btn">Veja sobre</a>
                               </div>
                           </div>
                       </div>
                   </div>
-              </div>
-              <div class="hero__item set-bg" data-setbg="img/Obras/capa17.png">
-                 <div class="container">
-                    <div class="row1">
-                          <div class="col-lg-6">
-                             <div class="hero__text">
-                              
-                                 <h2>Sally Face</h2>
-                                 <a href="#sal" class="primary-btn">Veja sobre</a>
-                             </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="hero__item set-bg" data-setbg="img/Obras/capa18.png">
+            </div>
+            <div class="hero__item set-bg" data-setbg="img/Obras/capa16.png"data-mobilebg="img/fundo.gif">
                 <div class="container">
                    <div class="row1">
-                         <div class="col-lg-6">
+                        <div class="col-lg-6">
                             <div class="hero__text">
-                             
-                                <h2> Rule of Rose</h2>
-                                <a href="#rose" class="primary-btn">Veja sobre</a>
+
+                                <h2>Midnight Scenes</h2>
+                               <a href="#mid" class="primary-btn">Veja sobre</a>
                             </div>
-                         </div>
-                     </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__item set-bg" data-setbg="img/Obras/capa17.png" data-mobilebg="img/fundo.gif">
+               <div class="container">
+                  <div class="row1">
+                        <div class="col-lg-6">
+                           <div class="hero__text">
+
+                               <h2>Sally Face</h2>
+                               <a href="#sal" class="primary-btn">Veja sobre</a>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__item set-bg" data-setbg="img/Obras/capa18.png" data-mobilebg="img/fundo.gif">
+              <div class="container">
+                 <div class="row1">
+                       <div class="col-lg-6">
+                          <div class="hero__text">
+
+                              <h2> Rule of Rose</h2>
+                              <a href="#rose" class="primary-btn">Veja sobre</a>
+                          </div>
+                       </div>
                    </div>
-              </div>
-              <div class="hero__item set-bg" data-setbg="img/Obras/capa19.png">
-                <div class="container">
-                   <div class="row1">
-                         <div class="col-lg-6">
-                            <div class="hero__text">
-                             
-                                <h2>Doki Doki Literature Club</h2>
-                                <a href="#doki" class="primary-btn">Veja sobre</a>
-                            </div>
-                         </div>
-                     </div>
                  </div>
-             </div>
-
-              <div class="hero__item set-bg" data-setbg="img/Obras/capa20.png">
-                <div class="container">
-                   <div class="row1">
-                         <div class="col-lg-6">
-                            <div class="hero__text">
-                             
-                                <h2>Detroit Become Human</h2>
-                                <a href="#detro" class="primary-btn">Veja sobre</a>
-                            </div>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-                  
-               
-                 
-                 
-                  
-                
-
-             
-                
-          </div>
-    </section>
-
-
-
-    <section id="omo">
-        <div class="capa"> 
-            <div class="capa-content">
-
-              <div class="scrol">
-
-                <img class="capaimg" src="img/Obras/omo.png" alt="">
-                <div>
-                  <p>
-                   
-                    
-                      <b>Estúdio:</b> Omocat <br>
-                      <b> Plataforma(s):</b>Microsoft Windows, MAC, PS4, Xbox One, Switch. <br>
-                      <b>Ano de Lançamento:</b> 2020
-                  </p>
-                </div>
-                
-              </div>
-                
             </div>
-            <div class="capa-content">
-               <h2>
-                    OMORI
-                </h2>
-                <div class="accordion" id="accordionExample">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                          Sobre
-                        </button>
-                      </h2>
-                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                          
-                        <p>
-                          Baseado na série de webcomics do diretor, Omori (ひきこもり hikikomori?), há destaque para conceitos como ansiedade e depressão e elementos de terror psicológico. Na história, o jogador controla um garoto chamado Sunny e seu alter ego do mundo dos sonhos Omori. Eles exploram o mundo real e o mundo surreal dos sonhos para superar seus medos e segredos. Como eles interagem depende das escolhas feitas pelo jogador, resultando em um dos vários finais. O sistema de batalha baseado em turnos do jogo inclui efeitos de status não convencionais baseados nas emoções dos personagens.
-                       
-                        </p>
-                        
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                          Conexão os Transtornos
-                        </button>
-                      </h2>
-                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                        <p>
-                
-                          Omori é um jogo que explora temas de depressão, ansiedade e trauma através de uma narrativa surreal. O protagonista, Sunny, lida com a perda de sua irmã, Mari, e enfrenta seus medos e culpas em um mundo alternativo chamado Headspace, que reflete seu estado psicológico. O jogo usa símbolos e personagens para representar emoções e conflitos internos, como o medo e a tristeza.
+            <div class="hero__item set-bg" data-setbg="img/Obras/capa19.png" data-mobilebg="img/fundo.gif">
+              <div class="container">
+                 <div class="row1">
+                       <div class="col-lg-6">
+                          <div class="hero__text">
 
-                          Ao longo da história, Sunny confronta monstros que representam seus traumas e enfrenta dilemas emocionais, como o luto e o medo da realidade. A mecânica do jogo envolve emoções, mostrando como elas afetam tanto o combate quanto as interações entre os personagens. O enredo sugere que a cura e a superação da ansiedade e depressão passam por enfrentar e compreender as próprias emoções e traumas, em vez de fugir deles.
-                        </p>
-                         
-                        </div>
-                      </div>
-                    </div>
-                   
-                  </div>
-                
-               
-
-            </div>
-            
-        </div>
-        
-       
-
-
-
-    </section>
-    
-    <section id="cel">
-        <div class="capa"> 
-            <div class="capa-content">
-
-              <div class="scrol">
-
-                 <img class="capaimg" src="img/Obras/celeste.png" alt="">
-                <p>
-                   <b>Desenvolvedores:</b>  Maddy Makes Games, Extremely OK Games, Ltd.<br>
-                    <b>Plataformas:</b>Nintendo Switch, PlayStation 4, Linux, macOS, Xbox One, Microsoft Windows + <br>
-                  
-                    <b>Ano de Lançamento:</b>5 de janeiro de 2018
-                </p>
-              </div>
-               
-            </div>
-            <div class="capa-content">
-                <h2>
-                   Celeste
-                </h2>
-                <div class="accordion" id="accordionExample">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                          Sobre
-                        </button>
-                      </h2>
-                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                          
-                            <p>
-                              Madeline embarca na difícil tarefa de escalar a montanha Celeste, mas a jornada é muito mais do que uma simples escalada física. Durante a ascensão, ela encontra várias dificuldades, tanto externas (como inimigos e obstáculos) quanto internas, representadas por uma versão de si mesma chamada Badeline, que personifica sua ansiedade, insegurança e dúvidas.
-                           </p>
-                        
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                          Conexão com os Transtornos
-                        </button>
-                      </h2>
-                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                        <p>
-                            
-
-                          Celeste é um jogo de plataforma que segue Madeline em sua jornada para escalar a montanha Celeste, simbolizando sua luta contra ansiedade e depressão. Ao longo do jogo, ela enfrenta Badeline, uma versão de si mesma que representa sua ansiedade. A montanha e os obstáculos que Madeline encontra simbolizam desafios psicológicos, enquanto o jogo enfatiza temas de auto aceitação e perseverança. Ao superar os desafios, Madeline aprende a lidar com suas falhas, refletindo o processo de enfrentar e aceitar as dificuldades emocionais na vida.
-                        </p>
-                         
-                        </div>
-                      </div>
-                    </div>
-                    
-                  </div>
-             </div>
-            
-        </div>
-        
-       
-    </section>
-
-    <section id="lis">
-        <div class="capa"> 
-            <div class="capa-content">
-
-              <div class="scrol">
-
-                <img class="capaimg" src="img/Obras/lis.png" alt="">
-                <p>
-                   
-                    <b>Desenvolvedores</b>  Dontnod Entertainment<br>
-                    <b>Plataformas</b>Android, iOS, PC, via Steam, PlayStation 4 e Xbox One <br>
-                  
-                    <b>Ano de Lançamento:</b> 29 de janeiro de 2015
-                </p>
-              </div>
-                
-            </div>
-            <div class="capa-content">
-                <div>
-                         <h2>
-                           Life is Strange
-                        </h2>
-                        <div class="accordion" id="accordionExample">
-                            <div class="accordion-item">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                  Sobre
-                                </button>
-                              </h2>
-                              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                  
-                                    <p>
-                                      O jogo narra a história da estudante Max, abordando ao longo do jogo uma série de temas que ainda são considerados tabus no mundo dos games. A trama traz em seus cinco episódios, questões como depressão, bullying, divisão social e suicídio, que são abordados de uma forma sensível e bem trabalhada.
-                                  
-                                   </p>
-                                
-                                </div>
-                              </div>
-                            </div>
-                            <div class="accordion-item">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                  Conexão com os Transtornos
-                                </button>
-                              </h2>
-                              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                <p>
-                                    
-        
-                                  Life is Strange aborda temas como ansiedade e depressão por meio de seus personagens principais, Max Caulfield e Chloe Price. Max é uma jovem introvertida que lida com inseguranças e ansiedade social, enquanto Chloe enfrenta uma depressão profunda após a perda do pai, o que a torna rebelde e emocionalmente fragilizada. O jogo explora como as escolhas de Max, incluindo a manipulação do tempo, geram consequências emocionais e morais significativas, destacando a pressão psicológica de decisões difíceis. A investigação sobre o desaparecimento de Rachel Amber, amiga de Chloe, também simboliza o luto e a dificuldade de encontrar fechamento para questões emocionais não resolvidas. Ao longo do jogo, o jogador experimenta como essas questões afetam o desenvolvimento das personagens e o impacto das escolhas na vida delas
-                                  </p>
-                                 
-                                </div>
-                              </div>
-                            </div>
-                            
+                              <h2>Doki Doki Literature Club</h2>
+                              <a href="#doki" class="primary-btn">Veja sobre</a>
                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
 
-                </div>
-             
-             
+            <div class="hero__item set-bg" data-setbg="img/Obras/capa20.png" data-mobilebg="img/fundo.gif">
+              <div class="container">
+                 <div class="row1">
+                       <div class="col-lg-6">
+                          <div class="hero__text">
+
+                              <h2>Detroit Become Human</h2>
+                              <a href="#detro" class="primary-btn">Veja sobre</a>
+                          </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+
+
+
+
+
+
+
+
         </div>
-        
-
-    </section>
+  </section>
 
 
 
-    <section id="moon">
-        <div class="capa"> 
-            <div class="capa-content">
-
-              <div class="scrol">
-
-                <img class="capaimg" src="img/Obras/tothemoon.png" alt="">
-                <p>
-                   <b>Desenvolvedores:</b> Freebird Games <br>
-                    <b>Plataformas:</b> Linux, macOS, Android, iOS<br>
-                    <b>Estúdio:</b>Biblioteca Azul <br>
-                    <b>Data de Lançamento:</b> 01 de novembro de 2011
-
-                </p> 
-              </div>
-                
-                
-            </div>
-            <div class="capa-content">
-                <h2>
-                    To the Moon
-                </h2>
-
-
-                <div class="accordion" id="accordionExample">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                          Sobre
-                        </button>
-                      </h2>
-                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                          
-                            <p>
-                              No jogo, temos dois funcionários da Sigmund Corp - Dr. Eva Rosalene e Dr. Neil Watts - contratados para realizar o desejo de Johnny, que deseja ir para a lua. É um jogo cheio de aventuras, tragédias, mistérios e uma dose ideal de humor, um jogo envolvente e apesar de sua jogabilidade simples no estilo Point and Click, é um jogo que nos faz refletir sobre a vida e os problemas que passamos, e possui um desfecho incrível que impressionará o jogador.
-                           </p>
-                        
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                          Conexão com os Transtornos
-                        </button>
-                      </h2>
-                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                        <p>
-                            
-                            To the Moon é um jogo que explora temas de depressão e ansiedade através da história de Johnny, um homem moribundo que deseja ir à lua. Dois médicos viajam por suas memórias para realizar esse desejo. O jogo aborda traumas passados, arrependimentos e solidão, além da dificuldade de aceitar a morte. A lua simboliza a fuga da dor emocional. Apesar dos temas pesados, o jogo transmite uma mensagem de cura e aceitação, mostrando que é possível encontrar paz mesmo com os arrependimentos.
-                          </p>
-                         
-                        </div>
-                      </div>
-                    </div>
-                    
-                  </div>
-
-
-
-
-
-    </section>
-
-  
-
-    <section id="mid">
-        <div class="capa"> 
-            <div class="capa-content">
-
-              <div class="scrol">
-                <img class="capaimg" src="img/Obras/mid.png" alt="">
-                <p>
-                   
-                    <b>Desenvolvedor:</b>Octavi Navarro <br>
-                    <b>Plataformas:</b> PC <br>
-                    <b>Data de Lançamento:</b> 16 de outubro de 2019
-                </p>
-              </div>
-                
-            </div>
-            <div class="capa-content">
-                <h2>
-                   Midnight Scenes: A Safe Place
-                </h2>
-
-
-                <div class="accordion" id="accordionExample">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                          Sobre
-                        </button>
-                      </h2>
-                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                          
-                            <p>
-                              John, o protagonista, busca refúgio após um incidente perturbador, mas ao chegar à casa, ele se vê cada vez mais imerso em uma atmosfera de ansiedade e desconfiança. À medida que a história se desenrola, ele começa a perceber que nada no local é o que parece ser. O jogo é repleto de mistério, com uma crescente sensação de paranoia e isolamento, em que o jogador deve explorar o ambiente e resolver enigmas para entender o que está acontecendo.
-                            </p>
-                        
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                          Conexão com os Transtornos
-                        </button>
-                      </h2>
-                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                           <p>
-                            
-
-                               O jogo explora temas como o trauma psicológico, a ansiedade e a sensação de isolamento. À medida que John lida com os medos e segredos do passado, ele é confrontado com sua própria percepção da realidade, que começa a se distorcer. O ambiente isolado e as situações de medo geram uma sensação crescente de desespero, simbolizando o impacto psicológico de experiências traumáticas.
-                            </p>
-                         
-                        </div>
-                      </div>
-                    </div>
-                    
-                  </div>
-
-
-
-
-
-    </section>
-    <section id="sal">
-      <div class="capa"> 
+  <section id="omo">
+      <div class="capa">
+          <h2 class="tito">
+                      OMORI
+          </h2>
           <div class="capa-content">
 
             <div class="scrol">
 
-               <img class="capaimg" src="img/Obras/sal.png" alt="">
-              <p>
-                 <b>Criador:</b> Steve Gabry <br>
-                  
-                  <b>Desenvolvedores:</b>Portable Moose; The Knights of Unity <br>
-                  <b>Plataformas:</b> Nintendo Switch, PlayStation 4, Xbox One, macOS, Linux, Microsoft Windows, Mac OS <br>
-                  <b>Data de Lançamento:</b> 16 de agosto de 2016
-              </p>
+              <img class="capaimg" src="img/Obras/omo.png" alt="">
+              <div>
+                <ul>
+                  <li> Estúdio:Omocat </li>
+                  <li> Plataforma(s): Microsoft Windows, MAC, PS4, Xbox One, Switch</li>
+                  <li>   Ano de Lançamento:2020</li>
+
+                </ul>
+
+
+              </div>
+
             </div>
-             
+
           </div>
           <div class="capa-content">
-              <h2>
-                  Sally Face
+             <h2 class="tit">
+                  OMORI
               </h2>
-
-
               <div class="accordion" id="accordionExample">
                   <div class="accordion-item">
                     <h2 class="accordion-header">
@@ -575,12 +272,96 @@
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
-                        
+
+                      <p>
+                       Omori (ひきこもり hikikomori?), há destaque para conceitos como ansiedade e depressão e elementos de terror psicológico. Na história, o jogador controla um garoto chamado Sunny e seu alter ego do mundo dos sonhos Omori. Eles exploram o mundo real e o mundo surreal dos sonhos para superar seus medos e segredos. Como eles interagem depende das escolhas feitas pelo jogador, resultando em um dos vários finais. O sistema de batalha baseado em turnos do jogo inclui efeitos de status não convencionais baseados nas emoções dos personagens.
+
+                      </p>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Conexão os Transtornos
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                      <p>
+
+                        Omori é um jogo que explora temas de depressão, ansiedade e trauma através de uma narrativa surreal. O protagonista, Sunny, lida com a perda de sua irmã, Mari, e enfrenta seus medos e culpas em um mundo alternativo chamado Headspace, que reflete seu estado psicológico. O jogo usa símbolos e personagens para representar emoções e conflitos internos, como o medo e a tristeza.
+
+                        Ao longo da história, Sunny confronta monstros que representam seus traumas e enfrenta dilemas emocionais, como o luto e o medo da realidade. A mecânica do jogo envolve emoções, mostrando como elas afetam tanto o combate quanto as interações entre os personagens. O enredo sugere que a cura e a superação da ansiedade e depressão passam por enfrentar e compreender as próprias emoções e traumas, em vez de fugir deles.
+                      </p>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+
+
+          </div>
+
+      </div>
+
+
+
+
+
+  </section>
+
+  <section id="cel">
+      <div class="capa">
+       <h2 class="tito">
+                 Celeste
+        </h2>
+          <div class="capa-content">
+
+            <div class="scrol">
+
+               <img class="capaimg" src="img/Obras/celeste.png" alt="">
+               <div>
+
+                  <ul>
+                    <li>
+                      Desenvolvedores: Maddy Makes Games, Extremely OK Games, Ltd.
+                    </li>
+                    <li>
+                      >Plataformas:Nintendo Switch, PlayStation 4, Linux, macOS, Xbox One, Microsoft Windows + <
+                    </li>
+                    <li>
+                       Ano de Lançamento:5 de janeiro de 2018
+                    </li>
+
+                  </ul>
+              </div>
+
+
+            </div>
+
+          </div>
+          <div class="capa-content">
+              <h2 class=tit>
+                 Celeste
+              </h2>
+              <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Sobre
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+
                           <p>
-                            Sally Face é um jogo de aventura que segue Sal Fisher, um adolescente com uma aparência peculiar, enquanto ele investiga mistérios sobrenaturais em sua cidade. O jogo aborda de forma explícita depressão e ansiedade através da história de Sal, que lida com traumas passados, como a morte de sua mãe e um relacionamento conturbado com seu pai.
-                            
-                          </p>
-                      
+                            Madeline embarca na difícil tarefa de escalar a montanha Celeste, mas a jornada é muito mais do que uma simples escalada física. Durante a ascensão, ela encontra várias dificuldades, tanto externas (como inimigos e obstáculos) quanto internas, representadas por uma versão de si mesma chamada Badeline, que personifica sua ansiedade, insegurança e dúvidas.
+                         </p>
+
                       </div>
                     </div>
                   </div>
@@ -593,49 +374,125 @@
                     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
                       <p>
-                            Sal enfrenta isolamento e dificuldades em se conectar com os outros, refletindo a ansiedade social e a solidão associadas à depressão.
-                            Os eventos sobrenaturais do jogo simbolizam a confusão mental e os medos de Sal, misturando realidade e alucinações, o que representa a distorção da percepção causadas pela ansiedade.
-                            O uso de máscaras por Sal simboliza a tentativa de esconder suas emoções e a luta interna para lidar com sua dor.
-                            Outros personagens também têm suas próprias lutas emocionais, ampliando a reflexão sobre saúde mental no jogo.
+
+
+                        Celeste é um jogo de plataforma que segue Madeline em sua jornada para escalar a montanha Celeste, simbolizando sua luta contra ansiedade e depressão. Ao longo do jogo, ela enfrenta Badeline, uma versão de si mesma que representa sua ansiedade. A montanha e os obstáculos que Madeline encontra simbolizam desafios psicológicos, enquanto o jogo enfatiza temas de auto aceitação e perseverança. Ao superar os desafios, Madeline aprende a lidar com suas falhas, refletindo o processo de enfrentar e aceitar as dificuldades emocionais na vida.
                       </p>
-                      
+
                       </div>
                     </div>
                   </div>
-                  
+
                 </div>
+           </div>
+
+      </div>
 
 
+  </section>
 
-
-
-     </section>
-
-     <section id="rose">
-      <div class="capa"> 
+  <section id="lis">
+      <div class="capa">
+        <h2 class="tito">
+                 Life is Strange
+        </h2>
           <div class="capa-content">
 
             <div class="scrol">
 
-               <img class="capaimg" src="img/Obras/rose.png" alt="">
-              <p>
-                 <b>Criador:</b> Steve Gabry <br>
-                
-                  
-                  <b>Desenvolvedores:</b> Punchline, Shirogumi<br>
-                  <b>Estúdios:</b> Atlus, 505 Games, Atlus USA, Sony Interactive Entertainment<br>
-                 
+              <img class="capaimg" src="img/Obras/lis.png" alt="">
+              <div>
+                <ul>
+                  <li>Desenvolvedores: Dontnod Entertainment</li>
+                  <li> Plataformas: Android, iOS, PC, via Steam, PlayStation 4 e Xbox One</li>
+                  <li> Data de Lançamento: 29 de janeiro de 2015</li>
 
-                  
-                  <b>Plataformas:</b>  PlayStation 2 <br>
-                  <b>Data de Lançamento:</b> 19 de janeiro de 2006
-              </p>
+                </ul>
+              </div>
+
+
             </div>
-             
+
           </div>
           <div class="capa-content">
-              <h2>
-                  Rule of Rose
+              <div>
+                       <h2 class="tit">
+                         Life is Strange
+                      </h2>
+                      <div class="accordion" id="accordionExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Sobre
+                              </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+
+                                  <p>
+                                    O jogo narra a história da estudante Max, abordando ao longo do jogo uma série de temas que ainda são considerados tabus no mundo dos games. A trama traz em seus cinco episódios, questões como depressão, bullying, divisão social e suicídio, que são abordados de uma forma sensível e bem trabalhada.
+
+                                 </p>
+
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Conexão com os Transtornos
+                              </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                              <p>
+
+
+                                Life is Strange aborda temas como ansiedade e depressão por meio de seus personagens principais, Max Caulfield e Chloe Price. Max é uma jovem introvertida que lida com inseguranças e ansiedade social, enquanto Chloe enfrenta uma depressão profunda após a perda do pai, o que a torna rebelde e emocionalmente fragilizada. O jogo explora como as escolhas de Max, incluindo a manipulação do tempo, geram consequências emocionais e morais significativas, destacando a pressão psicológica de decisões difíceis. A investigação sobre o desaparecimento de Rachel Amber, amiga de Chloe, também simboliza o luto e a dificuldade de encontrar fechamento para questões emocionais não resolvidas. Ao longo do jogo, o jogador experimenta como essas questões afetam o desenvolvimento das personagens e o impacto das escolhas na vida delas
+                                </p>
+
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+
+              </div>
+
+
+      </div>
+
+
+  </section>
+
+
+
+  <section id="moon">
+      <div class="capa">
+        <h2 class="tito">
+               To the Moon
+        </h2>
+          <div class="capa-content">
+
+            <div class="scrol">
+
+                <img class="capaimg" src="img/Obras/tothemoon.png" alt="">
+                <div>
+                  <ul>
+                    <li>Desenvolvedores: Freebird Games </li>
+                    <li>Plataformas: Linux, macOS, Android, iOS </li>
+                    <li>Data de Lançamento: 01 de novembro de 2011</li>
+
+                  </ul>
+                </div>
+
+            </div>
+
+
+          </div>
+          <div class="capa-content">
+              <h2 class=tit>
+                    To the Moon
               </h2>
 
 
@@ -648,12 +505,82 @@
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
-                        
+
                           <p>
-                            
-                            Rule of Rose é um jogo de terror psicológico em que a jovem órfã Jennifer se vê presa em um orfanato sinistro, governado por um grupo de crianças cruéis chamadas "Aristocracia do Giz Vermelho". À medida que a história se desenrola, Jennifer enfrenta uma série de desafios emocionais e sobrenaturais enquanto explora os mistérios do orfanato e tenta lidar com seus traumas passados, como o medo do abandono e a perda de inocência. O jogo mergulha em temas profundos de abuso psicológico, solidão e a complexidade do trauma infantil, criando uma atmosfera sombria e perturbadora onde a realidade se mistura com o pesadelo.                        
+                            No jogo, temos dois funcionários da Sigmund Corp - Dr. Eva Rosalene e Dr. Neil Watts - contratados para realizar o desejo de Johnny, que deseja ir para a lua. É um jogo cheio de aventuras, tragédias, mistérios e uma dose ideal de humor, um jogo envolvente e apesar de sua jogabilidade simples no estilo Point and Click, é um jogo que nos faz refletir sobre a vida e os problemas que passamos, e possui um desfecho incrível que impressionará o jogador.
+                         </p>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Conexão com os Transtornos
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                      <p>
+
+                          To the Moon é um jogo que explora temas de depressão e ansiedade através da história de Johnny, um homem moribundo que deseja ir à lua. Dois médicos viajam por suas memórias para realizar esse desejo. O jogo aborda traumas passados, arrependimentos e solidão, além da dificuldade de aceitar a morte. A lua simboliza a fuga da dor emocional. Apesar dos temas pesados, o jogo transmite uma mensagem de cura e aceitação, mostrando que é possível encontrar paz mesmo com os arrependimentos.
+                        </p>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+
+
+
+
+  </section>
+
+
+
+  <section id="mid">
+      <div class="capa">
+          <h2 class="tito">
+                 Midnight Scenes: A Safe Place
+              </h2>
+          <div class="capa-content">
+
+            <div class="scrol">
+                <img class="capaimg" src="img/Obras/mid.png" alt="">
+                <div>
+                  <ul>
+                    <li>Desenvolvedor:Octavi Navarro</li>
+                    <li> Plataformas: PC  </li>
+                    <li> Data de Lançamento: 16 de outubro de 2019</li>
+
+                  </ul>
+                </div>
+
+            </div>
+
+          </div>
+          <div class="capa-content">
+              <h2 class="tit">
+                 Midnight Scenes: A Safe Place
+              </h2>
+
+
+              <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Sobre
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+
+                          <p>
+                            John, o protagonista, busca refúgio após um incidente perturbador, mas ao chegar à casa, ele se vê cada vez mais imerso em uma atmosfera de ansiedade e desconfiança. À medida que a história se desenrola, ele começa a perceber que nada no local é o que parece ser. O jogo é repleto de mistério, com uma crescente sensação de paranoia e isolamento, em que o jogador deve explorar o ambiente e resolver enigmas para entender o que está acontecendo.
                           </p>
-                      
+
                       </div>
                     </div>
                   </div>
@@ -666,240 +593,413 @@
                     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
                          <p>
-                              Ansiedade e Trauma: Jennifer lida com traumas de infância, especialmente o medo de abandono e a perda, refletidos em sua luta no orfanato. O ambiente opressor e as crianças manipuladoras simbolizam a distorção psicológica causada por traumas.
 
-                              Depressão: A figura do pai de Joshua é usada para simbolizar a depressão, afetando Jennifer através do sofrimento emocional e da ausência de apoio, criando uma ligação com seu próprio luto e sentimentos de perda.
-                              
-                              Bullying e Abuso Infantil: A hierarquia cruel criada pelas crianças no orfanato reflete o bullying e a violência emocional, amplificando o medo, a solidão e os traumas psicológicos de Jennifer.
-                              
-                              Perda da Inocência: As crianças, incluindo Jennifer, enfrentam uma perda de inocência ao se envolverem em rituais violentos, simbolizando como o abuso e os traumas infantis podem moldar a psicologia e a visão do mundo.
-                              
-                              Assédio Psicológico: A pressão emocional e manipulação que Jennifer sofre de outros órfãos, como Wendy e Diana, simbolizam formas de assédio psicológico, com destaque para o controle e a intimidação emocional.
-                              
-                              Busca por Amor e Aceitação: Wendy, uma das personagens centrais, busca desesperadamente a aceitação de Jennifer, mas seu comportamento possessivo reflete a complexidade das relações emocionais e o impacto da carência afetiva.
-                          
+
+                             O jogo explora temas como o trauma psicológico, a ansiedade e a sensação de isolamento. À medida que John lida com os medos e segredos do passado, ele é confrontado com sua própria percepção da realidade, que começa a se distorcer. O ambiente isolado e as situações de medo geram uma sensação crescente de desespero, simbolizando o impacto psicológico de experiências traumáticas.
                           </p>
-                      
+
                       </div>
                     </div>
                   </div>
-                  
+
                 </div>
 
 
 
 
 
-     </section>
+  </section>
+  <section id="sal">
+    <div class="capa">
+       <h2 class="tito">
+                Sally Face
+            </h2>
+        <div class="capa-content">
+
+          <div class="scrol">
+
+             <img class="capaimg" src="img/Obras/sal.png" alt="">
+             <div>
+                <ul>
+                  <li> Criador: Steve Gabry </li>
+                  <li> Desenvolvedores:Portable Moose; The Knights of Unity  </li>
+                  <li> Plataformas: Nintendo Switch, PlayStation 4, Xbox One, macOS, Linux, Microsoft Windows, Mac OS</li>
+                  <li> Data de Lançamento: 16 de agosto de 2016</li>
+
+                </ul>
+              </div>
 
 
-     <section id="doki">
-      <div class="capa"> 
-          <div class="capa-content">
 
-            <div class="scrol">
+
+
+          </div>
+
+        </div>
+        <div class="capa-content">
+            <h2 class="tit">
+                Sally Face
+            </h2>
+
+
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Sobre
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                        <p>
+                          Sally Face é um jogo de aventura que segue Sal Fisher, um adolescente com uma aparência peculiar, enquanto ele investiga mistérios sobrenaturais em sua cidade. O jogo aborda de forma explícita depressão e ansiedade através da história de Sal, que lida com traumas passados, como a morte de sua mãe e um relacionamento conturbado com seu pai.
+
+                        </p>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Conexão com os Transtornos
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                    <p>
+                          Sal enfrenta isolamento e dificuldades em se conectar com os outros, refletindo a ansiedade social e a solidão associadas à depressão.
+                          Os eventos sobrenaturais do jogo simbolizam a confusão mental e os medos de Sal, misturando realidade e alucinações, o que representa a distorção da percepção causadas pela ansiedade.
+                          O uso de máscaras por Sal simboliza a tentativa de esconder suas emoções e a luta interna para lidar com sua dor.
+                          Outros personagens também têm suas próprias lutas emocionais, ampliando a reflexão sobre saúde mental no jogo.
+                    </p>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+
+
+
+
+   </section>
+
+   <section id="rose">
+    <div class="capa">
+        <h2 class="tito">
+                Rule of Rose
+            </h2>
+        <div class="capa-content">
+
+          <div class="scrol">
+
+             <img class="capaimg" src="img/Obras/rose.png" alt="">
+              <div>
+                <ul>
+                  <li>Desenvolvedores:Punchline, Shirogumi</li>
+                  <li>Estúdios: Atlus, 505 Games, Atlus USA, Sony Interactive Entertainment </li>
+                  <li> Plataformas:  PlayStation 2</li>
+                  <li> Data de Lançamento: 19 de janeiro de 2006</li>
+
+                </ul>
+              </div>
+
+          </div>
+
+        </div>
+        <div class="capa-content">
+            <h2 class="tit">
+                Rule of Rose
+            </h2>
+
+
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Sobre
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                        <p>
+
+                          Rule of Rose é um jogo de terror psicológico em que a jovem órfã Jennifer se vê presa em um orfanato sinistro, governado por um grupo de crianças cruéis chamadas "Aristocracia do Giz Vermelho". À medida que a história se desenrola, Jennifer enfrenta uma série de desafios emocionais e sobrenaturais enquanto explora os mistérios do orfanato e tenta lidar com seus traumas passados, como o medo do abandono e a perda de inocência. O jogo mergulha em temas profundos de abuso psicológico, solidão e a complexidade do trauma infantil, criando uma atmosfera sombria e perturbadora onde a realidade se mistura com o pesadelo.
+                        </p>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Conexão com os Transtornos
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                       <p>
+                            Ansiedade e Trauma: Jennifer lida com traumas de infância, especialmente o medo de abandono e a perda, refletidos em sua luta no orfanato. O ambiente opressor e as crianças manipuladoras simbolizam a distorção psicológica causada por traumas.
+
+                            Depressão: A figura do pai de Joshua é usada para simbolizar a depressão, afetando Jennifer através do sofrimento emocional e da ausência de apoio, criando uma ligação com seu próprio luto e sentimentos de perda.
+
+                            Bullying e Abuso Infantil: A hierarquia cruel criada pelas crianças no orfanato reflete o bullying e a violência emocional, amplificando o medo, a solidão e os traumas psicológicos de Jennifer.
+
+                            Perda da Inocência: As crianças, incluindo Jennifer, enfrentam uma perda de inocência ao se envolverem em rituais violentos, simbolizando como o abuso e os traumas infantis podem moldar a psicologia e a visão do mundo.
+
+                            Assédio Psicológico: A pressão emocional e manipulação que Jennifer sofre de outros órfãos, como Wendy e Diana, simbolizam formas de assédio psicológico, com destaque para o controle e a intimidação emocional.
+
+                            Busca por Amor e Aceitação: Wendy, uma das personagens centrais, busca desesperadamente a aceitação de Jennifer, mas seu comportamento possessivo reflete a complexidade das relações emocionais e o impacto da carência afetiva.
+
+                        </p>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+
+
+
+
+   </section>
+
+
+   <section id="doki">
+    <div class="capa">
+       <h2 class="tito">
+                Doki Doki Literature Club
+            </h2>
+
+        <div class="capa-content">
+
+          <div class="scrol">
 
               <img class="capaimg" src="img/Obras/doki.png" alt="">
-              <p>
-                 
-                  
-                  <b>Desenvolvedores:</b> Team Salvato, Dan Salvato LLC<br>
-                  <b>Artistas:</b> Satchel; VelinquenT <br>
-                  <b>Plataformas:</b> Linux, Microsoft Windows, Mac OS <br>
-                  <b>Data de Lançamento:</b> 22 de setembro de 2017
-              </p>
-            </div>
-              
+              <div>
+                  <ul>
+                    <li>Desenvolvedores:Team Salvato, Dan Salvato LLC</li>
+                    <li>Artistas: Satchel; VelinquenT  </li>
+                    <li>  Plataformas: Linux, Microsoft Windows, Mac OS </li>
+                    <li> Data de Lançamento: 22 de setembro de 2017</li>
+
+                  </ul>
+               </div>
+
+
+
+
+
+
           </div>
-          <div class="capa-content">
-              <h2>
-                  Doki Doki Literature Club
-              </h2>
+
+        </div>
+        <div class="capa-content">
+            <h2 class="tit">
+                Doki Doki Literature Club
+            </h2>
 
 
-              <div class="accordion" id="accordionExample">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Sobre
-                      </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        
-                          <p>
-                            Você assume o papel de um estudante que se junta ao clube de literatura a convite de sua amiga de infância, Sayori. No clube, você conhece outras três personagens: Monika, Yuri e Natsuki. Inicialmente, o jogo parece seguir um formato típico de simulação de namoro, onde você interage com as personagens e constrói relacionamentos. No entanto, à medida que a história avança, elementos perturbadores começam a surgir, e o jogo revela sua verdadeira natureza.
-                           </p>
-                      
-                      </div>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Sobre
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                        <p>
+                          Você assume o papel de um estudante que se junta ao clube de literatura a convite de sua amiga de infância, Sayori. No clube, você conhece outras três personagens: Monika, Yuri e Natsuki. Inicialmente, o jogo parece seguir um formato típico de simulação de namoro, onde você interage com as personagens e constrói relacionamentos. No entanto, à medida que a história avança, elementos perturbadores começam a surgir, e o jogo revela sua verdadeira natureza.
+                         </p>
+
                     </div>
                   </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Conexão com os Transtornos
-                      </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                         <p>
-                          Sayori: Representa a depressão, escondendo sua tristeza profunda por trás de uma fachada alegre.
-                          Yuri: Lida com ansiedade e automutilação, refletindo traços de obsessão e solidão.
-                          Natsuki: Sugere problemas de abuso emocional e conflitos familiares, apresentando uma postura defensiva.
-                          Monika: Torna-se autoconsciente e obsessiva, abordando temas de livre-arbítrio e controle.
-                  
-                          </p>
-                  
-                      </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Conexão com os Transtornos
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                       <p>
+                        Sayori: Representa a depressão, escondendo sua tristeza profunda por trás de uma fachada alegre.
+                        Yuri: Lida com ansiedade e automutilação, refletindo traços de obsessão e solidão.
+                        Natsuki: Sugere problemas de abuso emocional e conflitos familiares, apresentando uma postura defensiva.
+                        Monika: Torna-se autoconsciente e obsessiva, abordando temas de livre-arbítrio e controle.
+
+                        </p>
+
                     </div>
                   </div>
-                  
                 </div>
 
+              </div>
 
 
 
 
-     </section>
-     <section id="detro">
-      <div class="capa"> 
-          <div class="capa-content">
-            <div class="scrol">
+
+   </section>
+   <section id="detro">
+    <div class="capa">
+       <h2 class="tito">
+                Detroit Become Human
+            </h2>
+        <div class="capa-content">
+          <div class="scrol">
 
               <img class="capaimg" src="img/Obras/detro.jpg" alt="">
-              <p>
-                 
-                  
-                  <b>Desenvolvedores:</b>Quantic Dream <br>
-                  <b>Estúdio:</b> Sony Interactive Entertainment<br>
+              <div>
 
-                  <b>Plataformas:</b>  PlayStation 4, Microsoft Windows <br>
-                  <b>Data de Lançamento:</b>25 de maio de 2018
-              </p>
-            </div>
-              
+                    <ul>
+                      <li>
+                        Desenvolvedores:Quantic Dream
+                      </li>
+                      <li>
+                        Estúdio: Sony Interactive Entertainment
+                      </li>
+                      <li>
+                        Plataformas: PlayStation 4, Microsoft Windows
+                      </li>
+                      <li> Data de Lançamento:25 de maio de 2018</li>
+
+                    </ul>
+             </div>
+
+
           </div>
-          <div class="capa-content">
-              <h2>
-                  Detroit Become Human
-              </h2>
 
-
-              <div class="accordion" id="accordionExample">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Sobre
-                      </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        
-                          <p>
-                            A história gira em torno de Kara, Markus e Connor, três andróides concebidos pela empresa fictícia CyberLife que, consoante as decisões que o tomar, mudarão o rumo da cidade de Detroit e, consequentemente, dos Estados Unidos da América. Além disso, será testemunhado o surgimento de uma nova raça: Os Divergentes (androides que manifestam emoções humanas).
-                          </p>
-                      
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Conexão com os Transtornos
-                      </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                         <p>
-                              Detroit: Become Human aborda temas que se relacionam com depressão e ansiedade de forma indireta:
-
-                              Connor: Luta com sua identidade e programação, refletindo ansiedade existencial e conflito interno sobre livre-arbítrio.
-                              
-                              Kara: Escapa de um ambiente abusivo, representando sentimentos de isolamento e a busca por segurança, comuns em quem sofre com trauma e ansiedade.
-                              
-                              Markus: Enfrenta pressão ao liderar uma revolução, lidando com ansiedade social e o medo de falhar, além de sentimentos de frustração relacionados à depressão.
-                              
-                              Androides e Humanos: O tratamento desigual dos androides simboliza o estigma e a alienação vividos por pessoas com distúrbios mentais, como a depressão e a ansiedade.
-                              
-                              O jogo explora, assim, dilemas emocionais e psicológicos que refletem as dificuldades enfrentadas por indivíduos com esses transtornos.
-                         </p>
-                     
-                      </div>
-                    </div>
-                  </div>
-                  
-                </div>
-
-
-
-
-
-     </section>
-    
-   
-
- 
-    <!-- Latest Blog Section End -->
-
- 
-
-    <!-- Footer Section Begin -->
-    <footer class="footer">
-        <div class="container">
-            
-            <div class="footer__option">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="footer__option__item">
-                            <h5>Sobre Nós</h5>
-                            <p>Alunos do 1° ano de técnico em informática da Etec MCM de Ribeirão Pires </p>
-                            <a href="./Qüiz.html#team" class="read__more">Read more <span class="arrow1_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-3">
-                        <div class="footer__option__item">
-                            <h5>Quem somos</h5>
-                            <ul>
-                                <li>Allyson Rocha</li>
-                                <li>Izan Rios</li>
-                                <li>Lorena da Silva</li>
-                                <li>Paola Onório</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-3">
-                        <div class="footer__option__item">
-                            <h5>Nosso Projeto </h5>
-                            <p>Projeto Interdisciplinar sobre Ansiedade / Depressão Conduzido pelas professoras Amanda Chagas (LP) e Cítia Pinho (IW)</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="footer__option__item">
-                            <h5>Email</h5>
-                            <p>Mande-nos suas opiniões </p>
-                            <form action="#">
-                                <input type="text" placeholder="Email">
-                                <button type="submit"><i class="fa fa-send"></i></button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            
-            </div>
         </div>
-    </footer>
-    <!-- Footer Section End -->
+        <div class="capa-content">
+            <h2 class="tit">
+                Detroit Become Human
+            </h2>
 
-    <!-- Js Plugins -->
-     <script src="js/bootstrap.bundle.js"></script>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/mixitup.min.js"></script>
-    <script src="js/masonry.pkgd.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
+
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Sobre
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                        <p>
+                          A história gira em torno de Kara, Markus e Connor, três andróides concebidos pela empresa fictícia CyberLife que, consoante as decisões que o tomar, mudarão o rumo da cidade de Detroit e, consequentemente, dos Estados Unidos da América. Além disso, será testemunhado o surgimento de uma nova raça: Os Divergentes (androides que manifestam emoções humanas).
+                        </p>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Conexão com os Transtornos
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                       <p>
+                            Detroit: Become Human aborda temas que se relacionam com depressão e ansiedade de forma indireta:
+
+                            Connor: Luta com sua identidade e programação, refletindo ansiedade existencial e conflito interno sobre livre-arbítrio.
+
+                            Kara: Escapa de um ambiente abusivo, representando sentimentos de isolamento e a busca por segurança, comuns em quem sofre com trauma e ansiedade.
+
+                            Markus: Enfrenta pressão ao liderar uma revolução, lidando com ansiedade social e o medo de falhar, além de sentimentos de frustração relacionados à depressão.
+
+                            Androides e Humanos: O tratamento desigual dos androides simboliza o estigma e a alienação vividos por pessoas com distúrbios mentais, como a depressão e a ansiedade.
+
+                            O jogo explora, assim, dilemas emocionais e psicológicos que refletem as dificuldades enfrentadas por indivíduos com esses transtornos.
+                       </p>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+
+
+
+
+   </section>
+
+
+
+
+  <!-- Latest Blog Section End -->
+
+
+
+  <!-- Footer Section Begin -->
+  <footer class="footer">
+      <div class="container">
+
+          <div class="footer__option">
+              <div class="row">
+                  <div class="col-lg-4 col-md-6 col-sm-6">
+                      <div class="footer__option__item">
+                          <h5>Sobre Nós</h5>
+                          <p>Alunos do 1° ano de técnico em informática da Etec MCM de Ribeirão Pires </p>
+                          <a href="./Qüiz.html#team" class="read__more">Read more <span class="arrow1_right"></span></a>
+                      </div>
+                  </div>
+                  <div class="col-lg-2 col-md-3 col-sm-3">
+                      <div class="footer__option__item">
+                          <h5>Quem somos</h5>
+                          <ul>
+                              <li>Allyson Rocha</li>
+                              <li>Izan Rios</li>
+                              <li>Lorena da Silva</li>
+                              <li>Paola Onório</li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-lg-2 col-md-3 col-sm-3">
+                      <div class="footer__option__item">
+                          <h5>Nosso Projeto </h5>
+                          <p>Projeto Interdisciplinar sobre Ansiedade / Depressão Conduzido pelas professoras Amanda Chagas (LP) e Cítia Pinho (IW)</p>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-12">
+                      <div class="footer__option__item">
+                          <h5>Email</h5>
+                          <p>Mande-nos suas opiniões </p>
+                          <form action="#">
+                              <input type="text" placeholder="Email">
+                              <button type="submit"><i class="fa fa-send"></i></button>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+  </footer>
+  <!-- Footer Section End -->
+
+  <!-- Js Plugins -->
+   <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/mixitup.min.js"></script>
+  <script src="js/masonry.pkgd.min.js"></script>
+  <script src="js/jquery.slicknav.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
