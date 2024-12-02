@@ -31,38 +31,70 @@
     </div>
 
     <!-- Header Section Begin -->
-    <header class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-2">
-                    <div class="header__logo">
-                        <a href="./index.html"><img src="img/logo/logo.png" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-lg-10">
-                    <div class="header__nav__option">
-                        <nav class="header__nav__menu mobile-menu">
-                            <ul>
-                                <li ><a href="./index.html">Início</a></li>
-                                <li class="active"><a href="./ans.html">Sobre</a></li>
-                                <li><a href="./Vídeos Informátivos.html">Vídeos Informátivos</a></li>
-                                <li><a href="#">Obras</a>
-                                    <ul class="dropdown">
-                                        <li><a href="./obras.html">Livros</a></li>
-                                        <li><a href="./obras 2.html">Jogos</a></li>
-                                        <li><a href="./obras 3.html">Séries</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="./Qüiz.html">Quiz</a></li>
-                            </ul>
-                        </nav>
-                    </div>
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2">
+                <div class="header__logo">
+                    <a href="./index.html"><img src="img/logo/logo.png" alt=""></a>
                 </div>
             </div>
-            <div id="mobile-menu-wrap"></div>
+            <div class="col-lg-10">
+                <div class="header__nav__option">
+                    <nav class="header__nav__menu mobile-menu">
+                        <ul>
+                            <li><a href="./index.html">Início</a></li>
+                            <li class="active"><a href="./ans.html">Sobre</a></li>
+                            <li><a href="./Vídeos Informátivos.html">Vídeos Informátivos</a></li>
+                            <li><a href="#">Obras</a>
+                                <ul class="dropdown">
+                                    <li><a href="./obras.html">Livros</a></li>
+                                    <li><a href="./obras 2.html">Jogos</a></li>
+                                    <li><a href="./obras 3.html">Séries</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./Qüiz.html">Quiz</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
-    </header>
-    <!-- Header End -->
+        <div id="mobile-menu-wrap"></div>
+    </div>
+</header>
+<!-- Header End -->
+
+<!-- Botão Voltar ao Topo -->
+
+
+<a href="#" class="back-to-top" id="backToTopBtn">
+    <span class="arrow">&#8679;</span> <!-- A seta que vai fazer a animação -->
+  </a>
+
+<!-- Scripts JS -->
+<script>
+    // Obtém o botão
+    let backToTopBtn = document.getElementById("backToTopBtn");
+
+    // Quando o usuário rolar para baixo 100px da parte superior da página, mostre o botão
+    window.onscroll = function() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            backToTopBtn.style.display = "block";
+        } else {
+            backToTopBtn.style.display = "none";
+        }
+    };
+
+    // Quando o botão for clicado, rola até o topo da página
+    backToTopBtn.addEventListener("click", function(event) {
+        event.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"  // Faz o scroll suave
+        });
+    });
+</script>
+
 
     <!-- Breadcrumb Begin -->
     <div class="breadcrumb-option spad set-bg" data-setbg="img/breadcrumb-bg.jpg">
@@ -73,7 +105,7 @@
                         <h2>Ansiedade</h2>
                         <div class="breadcrumb__links">
                             <a class="trac1" href="dep.html">Depressão</a>
-                            <span>Ansiedade</span>
+                            <a class="trac1" href="ans.html">Ansiedade</a>
                         </div>
                     </div>
                 </div>
@@ -331,6 +363,107 @@
         </div>
     </section>
     <!-- Counter Section End -->
+    <section class="latest spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title center-title">
+
+                        <h2>Artigos</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="latest__slider owl-carousel">
+                    <div class="col-lg-4">
+                        <div class="blog__item latest__item">
+                            <h4>Estudo mostra alta prevalência de depressão, ansiedade e estresse pós-covid-19</h4>
+                            <ul>
+                                <li>08/02/2022 </li>
+                                <li>Jornal da USP</li>
+                            </ul>
+                            <p>Foram avaliados 425 pacientes entre seis e nove meses após a alta hospitalar; mais da metade relatou declínio da memória e testes indicaram perdas cognitivas
+                                ...</p>
+                            <a href="https://jornal.usp.br/?p=489295">Read more <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog__item latest__item">
+                            <h4>Por que o Brasil deveria priorizar o tratamento da depressão na alocação dos recursos da Saúde?</h4>
+                            <ul>
+                                <li>16/10/2016</li>
+                                <li>Portal de Periodos</li>
+                            </ul>
+                            <p>Em abril de 2016, durante o evento "Fora das sombras: tornando a saúde mental uma prioridade global para o desenvolvimento" e enfatizaram a necessidade de priorizar os ...</p>
+                            <a href="http://scielo.iec.gov.br/scielo.php?script=sci_arttext&pid=S1679-49742016000400845">Read more <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog__item latest__item">
+                            <h4>Por que o Brasil tem a população mais depressiva da América Latina?</h4>
+                            <ul>
+                                <li>06/11/202</li>
+                                <li>g1.globo.com</li>
+                            </ul>
+                            <p>Dados do último mapeamento sobre a doença realizado pela OMS apontam que 5,8% da população brasileira sofre de depressão -- mais de 11 milhões de pessoas....</p>
+                            <a href="https://g1.globo.com/saude/noticia/2023/11/06/por-que-o-brasil-tem-a-populacao-mais-depressiva-da-america-latina.ghtml">Read more <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog__item latest__item">
+                            <h4>Depressão cresce 41% com pandemia: 'apoio é essencial para sair do fundo do poço', conta humorista</h4>
+                            <ul>
+                                <li>14/08/2022</li>
+                                <li>g1.globo.com</li>
+                            </ul>
+                            <p>O humorista Diego Cardoso, de 36 anos, viu "o fundo do poço" durante a pandemia, período em que recebeu o diagnóstico de depressão. Conflitos que ele já vivia e as incertezas ...</p>
+                            <a href="https://g1.globo.com/saude/saude-mental/noticia/2022/08/14/depressao-cresce-41percent-com-pandemia-apoio-e-essencial-para-sair-do-fundo-do-poco-conta-humorista.ghtml">Read more <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog__item latest__item">
+                            <h4>Entenda o que é depressão, quais os tratamentos e onde buscar ajuda</h4>
+                            <ul>
+                                <li>27/12/2023</li>
+                                <li>g1.globo.com</li>
+                            </ul>
+                            <p>No mundo, a Organização Mundial de Saúde (OMS) estima que cerca de 300 milhões de pessoas sofram de depressão....</p>
+                            <a href="https://g1.globo.com/saude/noticia/2023/12/27/morte-de-pc-siqueira-youtuber-relata-em-video-que-lutava-contra-depressao-entenda-o-que-e-quais-os-tratamentos-e-onde-buscar-ajuda.ghtml">Read more <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog__item latest__item">
+                            <h4>Pesquisa mostra que sintomas de depressão na juventude podem afetar a memória; entenda</h4>
+                            <ul>
+                                <li>26/06/2024</li>
+                                <li>g1.globo.com</li>
+                            </ul>
+                            <p>Uma pesquisa descobriu que jovens com sintomas depressivos estão mais vulneráveis à demência no envelhecimento....</p>
+                            <a href="https://g1.globo.com/ciencia/noticia/2024/06/26/pesquisa-mostra-que-sintomas-de-depressao-na-juventude-podem-afetar-a-memoria-entenda.ghtml">Read more <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog__item latest__item">
+                            <h4>Depressão: tem tratamento? Onde buscar ajuda? Veja 8 dúvidas sobre a doença que afeta 11% dos brasileiros</h4>
+                            <ul>
+                                <li>14/08/2022</li>
+                                <li>g1.globo.com</li>
+                            </ul>
+                            <p>A Organização Mundial de Saúde (OMS) estima que, no mundo inteiro, cerca de 300 milhões de pessoas sofram de depressão.
+
+                                Classificada como uma "crise negligenciada de saúde global",..</p>
+
+                            <a href="https://g1.globo.com/saude/saude-mental/noticia/2022/08/14/depressao-tem-cura-onde-buscar-ajuda-veja-8-duvidas-sobre-a-doenca-que-afeta-11percent-dos-brasileiros.ghtml">Read more <span class="arrow_right"></span></a>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Latest Blog Section End -->
 
 
 
