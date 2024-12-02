@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="css/estiloquiz.css">
+    <link rel="stylesheet" href="css/estiloquiz2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
@@ -77,6 +78,38 @@
     </header>
 
     <!-- Header End -->
+
+    <!-- Botão Voltar ao Topo -->
+
+
+<a href="#" class="back-to-top" id="backToTopBtn">
+    <span class="arrow">&#8679;</span> <!-- A seta que vai fazer a animação -->
+  </a>
+
+<!-- Scripts JS -->
+<script>
+    // Obtém o botão
+    let backToTopBtn = document.getElementById("backToTopBtn");
+
+    // Quando o usuário rolar para baixo 100px da parte superior da página, mostre o botão
+    window.onscroll = function() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            backToTopBtn.style.display = "block";
+        } else {
+            backToTopBtn.style.display = "none";
+        }
+    };
+
+    // Quando o botão for clicado, rola até o topo da página
+    backToTopBtn.addEventListener("click", function(event) {
+        event.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"  // Faz o scroll suave
+        });
+    });
+</script>
+
 
     <!-- Breadcrumb Begin -->
     <div class="breadcrumb-option spad set-bg" data-setbg="img/breadcrumb-bg.jpg">
@@ -135,6 +168,7 @@
                 </footer>
             </div>
             
+            
 
         <!-- RESULTADO BOX -->
             <div class="result_box text">
@@ -153,6 +187,7 @@
             </div>
         </div>
     </section>
+    
      
     <!-- Contact Widget Section Begin -->
     <section id="team" class="team spad set-bg" data-setbg="img/team-bg.jpg">
@@ -198,7 +233,14 @@
                         </div>
                     </div>
                 </div>
-              
+                <div class="col-lg-12 p-0">
+                    <div class="team__btn">
+                        <a href="fim.html" class="primary-btn">Finalizar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
             </div>
         </div>
         
@@ -270,6 +312,7 @@
     <script src="js/quiz.js"></script>
     <script src="js/questaosquiz.js"></script>
     <script src="js/quiz2.js"></script>
+    <script src="js/questaosquiz2.js"></script>
 </body>
 
 </html>
