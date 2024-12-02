@@ -58,6 +58,38 @@
     </header>
     <!-- Header End -->
 
+    <!-- Botão Voltar ao Topo -->
+
+
+<a href="#" class="back-to-top" id="backToTopBtn">
+    <span class="arrow">&#8679;</span> <!-- A seta que vai fazer a animação -->
+  </a>
+
+<!-- Scripts JS -->
+<script>
+    // Obtém o botão
+    let backToTopBtn = document.getElementById("backToTopBtn");
+
+    // Quando o usuário rolar para baixo 100px da parte superior da página, mostre o botão
+    window.onscroll = function() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            backToTopBtn.style.display = "block";
+        } else {
+            backToTopBtn.style.display = "none";
+        }
+    };
+
+    // Quando o botão for clicado, rola até o topo da página
+    backToTopBtn.addEventListener("click", function(event) {
+        event.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"  // Faz o scroll suave
+        });
+    });
+</script>
+
+
     <!-- Breadcrumb Begin -->
     <div class="breadcrumb-option spad set-bg" data-setbg="img/breadcrumb-bg.jpg">
         <div class="container">
