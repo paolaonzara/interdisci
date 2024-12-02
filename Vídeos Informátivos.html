@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+        
 
     <!-- Css Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -22,6 +23,8 @@
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
 </head>
 
 <body>
@@ -64,6 +67,38 @@
         </div>
     </header>
     <!-- Header End -->
+
+    <!-- Botão Voltar ao Topo -->
+
+
+<a href="#" class="back-to-top" id="backToTopBtn">
+    <span class="arrow">&#8679;</span> <!-- A seta que vai fazer a animação -->
+  </a>
+
+<!-- Scripts JS -->
+<script>
+    // Obtém o botão
+    let backToTopBtn = document.getElementById("backToTopBtn");
+
+    // Quando o usuário rolar para baixo 100px da parte superior da página, mostre o botão
+    window.onscroll = function() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            backToTopBtn.style.display = "block";
+        } else {
+            backToTopBtn.style.display = "none";
+        }
+    };
+
+    // Quando o botão for clicado, rola até o topo da página
+    backToTopBtn.addEventListener("click", function(event) {
+        event.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"  // Faz o scroll suave
+        });
+    });
+</script>
+
 
     <!-- Breadcrumb Begin -->
     <div class="breadcrumb-option spad set-bg" data-setbg="img/breadcrumb-bg.jpg">
@@ -304,6 +339,8 @@
            
         </div>
     </section>
+
+    
     
 
 
@@ -368,6 +405,11 @@
     <!-- Footer Section End -->
 
     <!-- Js Plugins -->
+     <!-- jQuery (necessário para o funcionamento do Magnific Popup) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Magnific Popup JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
