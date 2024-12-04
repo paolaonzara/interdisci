@@ -180,5 +180,27 @@
             }
         });
     });
+    $(document).ready(function () {
+        // Verifica se a página contém a classe 'pagina-especifica'
+        if ($('body').hasClass('pagina-especifica')) {
+    
+            function setBackgrounds() {
+                $('.set-bg').each(function () {
+                    var desktopBg = $(this).data('setbg');    // Fundo para desktop
+                    var mobileBg = $(this).data('mobilebg');  // Fundo para mobile
+    
+                    // Troca o fundo com base no tamanho da tela
+                    if (window.innerWidth > 800) {
+                        $(this).css('background-image', 'url(' + desktopBg + ')');
+                    } else {
+                        $(this).css('background-image', 'url(' + mobileBg + ')');
+                    }
+                });
+            }
+    
+            setBackgrounds(); // Configura ao carregar a página
+            $(window).resize(setBackgrounds); // Atualiza ao redimensionar
+        }
+    });
 
 })(jQuery);

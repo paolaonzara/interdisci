@@ -8,51 +8,44 @@
   <title>Pokemon Magazine</title>
 </head>
 
-
 <body>
-
-    <!-- Vídeo de fundo -->
-    <video class="background-video" autoplay muted loop>
-      <source src="img/sky.mp4" type="video/mp4">
-      Seu navegador não suporta vídeos HTML5.
-    </video>
-    <a href="./Qüiz.html">
-      <button class="button">
-            <svg class="svgIcon" viewBox="0 0 384 512">
-              <path
-                d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
-              ></path>
-            </svg>
-      </button>
-    </a>
-
-
-    <div class="flipbook">
-      <div class="hard"><img src="img/logo/logo.png" alt=""></div>
-      <div class="hard"></div>
-      <div>
-        <p>Espero que gostem:)</p>
-      </div>
-      <div>
-        <h2>Nas sombras de um quarto, em silêncio guardado,
-          Duas vidas cresciam, destino cruzado.
-          Uma mãe, dois filhos, entre paredes tão frias,
-          Escondiam histórias, segredos, agonias</h2>
-      </div>
-      <div>
-       <h2>Igor, do outro lado, buscava voar,
+  <video class="background-video" autoplay muted loop>
+    <source src="img/sky.mp4" type="video/mp4">
+    Seu navegador não suporta vídeos HTML5.
+  </video>
+  <a href="./Qüiz.html">
+    <button class="button">
+          <svg class="svgIcon" viewBox="0 0 384 512">
+            <path
+              d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+            ></path>
+          </svg>
+    </button>
+  </a>
+  <div class="flipbook">
+    <div class="hard"><img src="img/logo/" alt=""></div>
+    <div class="hard"></div>
+    <div>
+      <p>Espero que gostem :)</p>
+    <div>
+    <div>
+      <h2>Nas sombras de um quarto, em silêncio guardado,
+        Duas vidas cresciam, destino cruzado.
+        Uma mãe, dois filhos, entre paredes tão frias,
+        Escondiam histórias, segredos, agonias</h2>
+    <div>
+      <h2>Igor, do outro lado, buscava voar,
         Entre vidraças que insistiam em lhe barrar.
         O peso da mente, da ansiedade e da dor,
         Eram muros invisíveis, roubando-lhe o vigor.</h2>
-      </div>
-      <div>
-        <h2>Mas o que é a vida senão um mosaico quebrado,
-          Onde a liberdade nasce do que foi calado?
-          A dor une destinos de quem busca espaço,
-          Entre paredes, vidraças e o tempo escasso.</h2>
-      </div>
-      <div>
-       <h2>O quarto pode ser prisão,
+    <div>
+      <h2>Mas o que é a vida senão um mosaico quebrado,
+        Onde a liberdade nasce do que foi calado?
+        A dor une destinos de quem busca espaço,
+        Entre paredes, vidraças e o tempo escasso.</h2>
+    </div>
+    <div>
+      <h2>O quarto pode ser prisão,
         Mas também um casulo em transformação.
         Vidraças podem ferir quem tenta passar,
         Mas são elas que nos ensinam a superar.
@@ -60,19 +53,22 @@
         Que acolhe as feridas do bem e do mal.
         E a liberdade? Ah, essa mora no querer,
         De quem ousa cair, só para aprender a viver.</h2>
-      </div>
-      <div>
-          <H2>Procure ajuda e auxilie quem precisa.
-            CVV: 188  (Centro de valorização da vida)
-          </H2>
-      </div>
-      <div class="hard"></div>
-      <div class="hard">Muito ,Muito Obrigada pela Atenção!</div>
     </div>
+    <div>
+      <H2>Procure ajuda e auxilie quem precisa.
+        CVV: 188  (Centro de valorização da vida)
+      </H2>
+    </div>
+    
+    <div class="hard"></div>
+    <div class="hard">Thank You <small>~ HankTheTank</small></div>
+  </div>
 
   <script src="js/jquery.js"></script>
   <script src="js/turn.js"></script>
-
+  <script>
+    $(".flipbook").turn();
+  </script>
 </body>
 
 </html>
